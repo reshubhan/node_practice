@@ -1,0 +1,95 @@
+Node Js :- https://www.youtube.com/watch?v=czmulJ9NBP0
+http://www.tutorialspoint.com/nodejs/
+http://code.tutsplus.com/tutorials/nodejs-step-by-step-introduction--net-19448
+http://www.nodebeginner.org/
+https://blog.udemy.com/node-js-tutorial/
+http://www.mkyong.com/mongodb/how-to-install-mongodb-on-mac-os-x/
+What is node ?
+Node js is server side javascript used for real time apps like 
+chat applications
+Real time applications and collaborative environments
+game servers
+Ad servers 
+Streaming servers
+
+Node is great when you need high level of concurrency and little dedicated CPU time 
+Great for writing javascript code every where 
+Node is not a silver bullet. It’s designed for I/O-intensive operations and shines in building fast, scalable and real-time network applications. Examples of these applications are online games, collaboration tools, chat systems, etc. With Node, you can serve a great many clients with minimal system resources, and that’s why it’s designed for high scalability.
+Node is also an excellent choice for building APIs on top of a document database like MongoDB. You store your documents as JSON objects in Mongo and expose them via a RESTful API. No need to convert between JSON and other types when reading or writing from your database.
+Node, due to its architecture, should not be used for CPU-intensive operations. 
+
+Where node should not be used?
+Places where there is lot of cpu utilization may be a place where there is a very big calculation and it takes whole lot of cpu because it will be blocking all other process 
+
+Places where node is being used ?
+Microsoft (Azure mobile service)
+yahoo
+LinkedIn
+ebay
+Dow jones
+New york times
+
+More about node?
+
+Its community is huge
+Its is 3rd most popular repo on github
+Over 2 million downloads per month
+over 20 million downloads of v0.10x
+over 81000 modules on npm
+over 475 meet ups talking about it worldwide
+
+Reference :- https://strongloop.com/node-js/nodejs-infographic/
+
+what is npm?
+Node package module, has 81000 modules
+https://www.npmjs.com/
+official pacakge manager for node 
+bundled and installed automatically with the environment if you do npm install --save pacakge_name 
+it will save to pacakge.json file in form of dependencies in node_modules folder
+
+What is package.json in node?
+Its a like a file where u specify depencies / verison /author details etc, its basically like teling these are the libraries used in project and this is the author who created it etc.
+
+
+Error how/fix?
+
+error:- In most cases you are behind a proxy or have bad network settings.
+Fix :- use npm config set registry http://registry.npmjs.org/
+so that npm requests for http url instead of https.
+
+
+What is event driven programming?
+Its basically wehn the program no longer executes lineraly rather then by events based
+one event executs and then second event and it is done by node event loop feature
+It starts automactically and stays till the last call back is called.
+
+
+Node is single thread?
+Node is single thread, which means if you execute anything which paauses the process, it will pause everything elese
+like sleep funtion, it pauses everything , so event loop will also pause
+
+Blocking i/o?
+
+Like file reading, its like a blockign i/o, which block the whole process untill nad unless the whole file is read.
+
+Now this is cpu intensive process, where node may not be the best use 
+
+what is a call back?
+Call back helps us to break a big program into chunks to map to data , this is needed so that ur prgram does nto freeze event loop 
+by long running programs 
+
+
+What is a promise in node ?
+Promise are functions which promises to return object in future, so its like i promise u i will return u somethoing or the other etiher data or error, or exectpion anything 
+
+What is a MEAN stack?
+MEAN stands for:
+MongoDB: the database engine we use to store the data.
+Express.js: the server-side framework for building web applications, similar to ASP.NET MVC or Rails.
+Angular: the front-end framework for building web applications  
+Node.js: the Javascript runtime environment
+
+
+
+Note :- 
+In 2013, as explained on their blog, PayPal moved from Java to Node.js. LinkedIn also moved from Rails to Node. 
